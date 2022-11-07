@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+
+.Poster {
+    margin-top: 35px;
+    border-radius: 10px;
+    // display: flex;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    transition: 0.2s;
+
+    &:hover {
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    }
+}
+
+
+.PosterItem {
+    padding: 20px;
+    margin: 4px 0;
+    width: 100%;
+    // box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    //     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    border-radius: 10px;
+
+}
+
+.PosterImage {
+    border: 1px solid rgba(128, 128, 128, 0.418) !important;
+    border-radius: 10px;
+
+
+}
+
+.Next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    cursor: pointer;
+    background-color: $red;
+    z-index: 5;
+    border-radius: 10px;
+    position: absolute;
+    left: 50px;
+}
+
+.Prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    cursor: pointer;
+    background-color: $red;
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    z-index: 5;
+
+
+}
