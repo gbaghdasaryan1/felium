@@ -1,0 +1,23 @@
+@import "../../styles/variables.scss";
+
+.Section {
+    margin-top: 40px;
+    display: flex;
+
+    flex-direction: column;
+
+    &>h2 {
+        width: 100%;
+        color: $orange;
+        border-bottom: 1px solid $orange-light;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        &>a {
+            font-size: 18px;
+            color: $orange;
+            text-decoration: none;
+        }
+    }
+}

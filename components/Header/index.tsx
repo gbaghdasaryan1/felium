@@ -2,17 +2,19 @@ import classes from './Header.module.scss';
 import WidgetsIcon from '@mui/icons-material/Widgets';
 import Container from '../../layouts/ContainerLayout';
 import SearchIcon from '@mui/icons-material/Search';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const Header = () => {
+	const router = useRouter()
 	return (
 		<header className={classes.Header}>
-
 			<Container>
 				<div className={classes.HeaderContent}>
 
 					<WidgetsIcon fontSize='large' sx={{ color: "#FC7D50", cursor: "pointer" }} />
-					<div>
-						LOGO
+					<div className={classes.Logo} onClick={() => router.push("/")}>
+						Felium
 					</div>
 					<div className={classes.SearchField}>
 						<input type="search" />
@@ -21,11 +23,21 @@ const Header = () => {
 						</span>
 					</div>
 					<nav className={classes.Navigation}>
-						<a href="#">About Us</a>
-						<a href="#">Contacts</a>
-						<a href="#">Like List</a>
-						<a href="#">Basket</a>
-						<a href="#">Order</a>
+						<Link href="#">
+							About Us
+						</Link>
+						<Link href="#">
+							Contacts
+						</Link>
+						<Link href="#">
+							Like List
+						</Link>
+						<Link href="/basket">
+							Basket
+						</Link>
+						<Link href="#">
+							Order
+						</Link>
 					</nav>
 				</div>
 			</Container>

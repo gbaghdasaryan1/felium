@@ -1,0 +1,72 @@
+@import "../../styles/variables.scss";
+
+.ProductCard {
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px;
+    transition: 0.2s;
+    border: 1px solid rgba(128, 128, 128, 0.185);
+    // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    &:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+
+
+    &>.ProductImage {
+        height: 300px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+        position: relative;
+
+
+        &>span {
+            background-color: whitesmoke;
+            position: absolute;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6px;
+            border-radius: 50%;
+            border: 1px solid rgba(95, 95, 95, 0.308);
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+            }
+        }
+
+        &>span:nth-child(2) {
+            top: 50px;
+        }
+    }
+
+    &>p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &>button {
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        // border: 1px solid #53bd3bc4;
+        background-color: $orange-light;
+        color: whitesmoke;
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: #5fb64b;
+        }
+    }
+}
