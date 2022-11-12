@@ -4,11 +4,15 @@ import Container from '../../layouts/ContainerLayout';
 import SearchIcon from '@mui/icons-material/Search';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import useTranslation from "next-translate/useTranslation";
 
 const Header = () => {
-	const router = useRouter()
+
+	const { t } = useTranslation();
+	const router = useRouter();
 	return (
 		<header className={classes.Header}>
+
 			<Container>
 				<div className={classes.HeaderContent}>
 
@@ -33,7 +37,7 @@ const Header = () => {
 							Like List
 						</Link>
 						<Link href="/basket">
-							Basket
+							{t("common:basket")}
 						</Link>
 						<Link href="#">
 							Order
