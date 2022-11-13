@@ -28,19 +28,19 @@ const Header = () => {
 					</div>
 					<nav className={classes.Navigation}>
 						<Link href="#">
-							About Us
+							{t("common:about_us")}
 						</Link>
 						<Link href="#">
-							Contacts
+							{t("common:contacts")}
 						</Link>
 						<Link href="#">
-							Like List
+							{t("common:likes_list")}
 						</Link>
 						<Link href="/basket">
 							{t("common:basket")}
 						</Link>
 						<Link href="#">
-							Order
+							{t("common:order")}
 						</Link>
 					</nav>
 				</div>
