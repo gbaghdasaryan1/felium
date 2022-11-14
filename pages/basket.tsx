@@ -6,7 +6,6 @@ const Basket = () => {
 	const { t } = useTranslation()
 	return (
 		<>
-			<h1>{t("basket:basket")}</h1>
 			<BasketPage />
 		</>
 	)

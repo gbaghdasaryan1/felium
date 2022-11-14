@@ -2,11 +2,13 @@ import Container from '../../layouts/ContainerLayout';
 import classes from './Topbar.module.scss';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import LanguageSelect from '../LanguageSelect';
 const Topbar = () => {
 	return (
 		<section className={classes.Topbar}>
 			<Container>
 				<div className={classes.TopbarContent}>
+					<LanguageSelect/>
 					<a href='tel:+37494609304'>
 						<PhoneIcon fontSize='small' />
 						+374 94-609-304

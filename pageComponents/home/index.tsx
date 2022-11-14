@@ -8,8 +8,8 @@ const HomePage = () => {
 		<div>
 			<MainLayout>
 				<Poster />
-				<Section title='New Collection' />
-				<Section title='Best Sellers' />
+				<Section title='New Collection'  alias='New'/>
+				<Section title='Best Sellers'  alias='Best sellers'/>
 			</MainLayout>
 		</div>
 	);

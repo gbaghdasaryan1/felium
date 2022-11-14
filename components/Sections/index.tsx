@@ -6,15 +6,16 @@ import ProdIMG from '../../public/product/product.jpg';
 import ProductCard from '../ProductCard';
 import { products } from '../../helpers/data';
 import ProductList from '../ProductList';
+import Link from 'next/link';
 
 
-const Section = ({ title = "New Collection" }: SectionProps) => {
+const Section = ({ title = "New Collection",alias = "new" }: SectionProps) => {
 	return (
 
 		<Container className={classes.Section}>
 			<h2>
 				{title}
-				<a href="#">See all</a>
+				<Link href={`/see-all/${alias}`}>See all</Link>
 			</h2>
 			<ProductList data={products} />
 		</Container>
