@@ -8,7 +8,7 @@ import useTranslation from "next-translate/useTranslation";
 
 const Header = () => {
 
-	const { t } = useTranslation();
+	const { t } = useTranslation("common");
 	const router = useRouter();
 	return (
 		<header className={classes.Header}>
@@ -28,19 +28,19 @@ const Header = () => {
 					</div>
 					<nav className={classes.Navigation}>
 						<Link href="#">
-							{t("common:about_us")}
+							{t("about_us")}
 						</Link>
 						<Link href="#">
-							{t("common:contacts")}
+							{t("contacts")}
 						</Link>
 						<Link href="#">
-							{t("common:likes_list")}
+							{t("likes_list")}
 						</Link>
 						<Link href="/basket">
-							{t("common:basket")}
+							{t("basket")}
 						</Link>
 						<Link href="#">
-							{t("common:order")}
+							{t("order")}
 						</Link>
 					</nav>
 				</div>

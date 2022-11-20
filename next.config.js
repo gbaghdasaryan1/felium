@@ -4,6 +4,10 @@ const nextTranslate = require('next-translate')
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+
+  images: {
+    domains: ["swiperjs.com"],
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
